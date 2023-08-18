@@ -6,7 +6,6 @@ class Rectangulo{
 	int numeros[];
 public:
 	Rectangulo();
-	Rectangulo();
 	void ingresarnumeros();
 	int ObtenerAreaMaxima();
 	

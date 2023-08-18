@@ -31,26 +31,35 @@ void Rectangulo::ingresarnumeros() {
 		}
 	}
 	cout << "]";
+	delete[] letras;
 }
 int Rectangulo::ObtenerAreaMaxima() {
-	int mayor;
-	int verif;
-	for ( int i = 0; i < leng; i++){
-		if (numeros[i] > numeros[leng]) {
-			mayor = numeros[0];
-			verif = 0;
+	int mayor,izq,derch;
+	int j = 0;
+	for ( int i = 0; i < leng-1; i++){
+		//Altura = 
+		if (numeros[j] > numeros[leng]) {
+			j++;
+			derch = numeros[j];
+			
 		}
-		else {
-			mayor = numeros[leng];
-			verif = 1;
+		else if(numeros[leng]<numeros[j]) {
+			leng--;
+			izq = numeros[leng];
+			
+		}
+		else if (numeros[leng] == numeros[j]) {
+			j + 1;
+			derch = numeros[j];
 		}
 	}
+
 		
 
 
 
 	
-	Base = leng - 2;
+	//Base = leng - 2;
 
 
 	areamax = Base * Altura;

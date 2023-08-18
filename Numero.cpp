@@ -1,7 +1,11 @@
 #include "Numero.h"
-Numero::Numero(int num, char letr[]) {
+Numero::Numero() {
+
+}
+Numero::Numero(int num, char* letr[80]) {
 	numero = num;
-	//Letras = letr;
+	Letras = letr;
+	
 }
 char* Numero::getLetras() {
 	return Letras;
@@ -15,5 +19,6 @@ void Numero::ObtenerSecuencias(vector<Numero*>) {
 Numero::~Numero() {
 }
 vector<Numero*>Numero:: procesarcadena() {
-
+	vector <Numero*> num;
+	return num;
 }
