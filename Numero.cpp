@@ -2,9 +2,9 @@
 Numero::Numero() {
 
 }
-Numero::Numero(int num, char* letr[80]) {
+Numero::Numero(int num, char letr[]) {
 	numero = num;
-	Letras = letr;
+	//Letras = letr;
 	
 }
 char* Numero::getLetras() {

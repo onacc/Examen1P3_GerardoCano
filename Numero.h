@@ -7,7 +7,7 @@ class Numero{
 	char Letras[];
 public:
 	Numero();
-	Numero(int, char*);
+	Numero(int, char[]);
 	~Numero();
 	vector<Numero*> procesarcadena();
 	void asignarLetras(int);

@@ -17,9 +17,9 @@ void menu() {
             
             break;
         case 2:
-            Rectangulo r;
-            r.ingresarnumeros();
-            r.ObtenerAreaMaxima();
+            Rectangulo r();
+            //r.ingresarnumeros();
+            //r.ObtenerAreaMaxima();
             break;
         default:
             cout << "Saliendo";
